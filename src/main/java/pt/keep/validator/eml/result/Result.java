@@ -1,4 +1,4 @@
-package pt.keep.validator.result;
+package pt.keep.validator.eml.result;
 
 import java.util.Map;
 
@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import pt.keep.validator.utils.jaxb.MapAdapter;
+import pt.keep.validator.eml.utils.jaxb.MapAdapter;
 
 @XmlRootElement(name = "emlCharacterizationResult")
 @XmlType(propOrder = { "validationInfo","features" })

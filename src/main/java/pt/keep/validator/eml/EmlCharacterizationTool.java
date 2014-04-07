@@ -1,4 +1,4 @@
-package pt.keep.validator;
+package pt.keep.validator.eml;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -27,8 +27,8 @@ import org.apache.james.mime4j.parser.MimeEntityConfig;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
-import pt.keep.validator.result.Result;
-import pt.keep.validator.result.ValidationInfo;
+import pt.keep.validator.eml.result.Result;
+import pt.keep.validator.eml.result.ValidationInfo;
 
 
 public class EmlCharacterizationTool {
@@ -62,7 +62,7 @@ public class EmlCharacterizationTool {
       jaxbMarshaller.marshal(res, bos);
       return bos.toString("UTF-8");
     } catch (Exception e) {
-      e.printStackTrace();
+      //e.printStackTrace();
     }
     return null;
   }
@@ -110,7 +110,7 @@ public class EmlCharacterizationTool {
 
 
     } catch (Exception ex) {
-      ex.printStackTrace();
+      //ex.printStackTrace();
       val.setValid(false);
       val.setValidationError(ex.getMessage());
       features.clear();
@@ -119,7 +119,7 @@ public class EmlCharacterizationTool {
         try {
           fis.close();
         } catch (IOException ex) {
-          ex.printStackTrace();
+         // ex.printStackTrace();
         }
       }
     }
@@ -212,7 +212,7 @@ public class EmlCharacterizationTool {
         System.out.println(toolOutput);
       }
     } catch (Exception e) {
-      e.printStackTrace();
+      //e.printStackTrace();
     }
 
   }

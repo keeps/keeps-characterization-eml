@@ -23,7 +23,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>pt.keep.validator.EmlCharacterizationTool</mainClass>
+							<mainClass>pt.keep.validator.eml.EmlCharacterizationTool</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
